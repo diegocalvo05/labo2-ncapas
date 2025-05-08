@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.ncapas</groupId>
-    <artifactId>labo02</artifactId>
+    <artifactId>laboratorio02</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>labo02</name>
-    <description>labo02</description>
+    <name>laboratorio02</name>
+    <description>laboratorio02</description>
     <url/>
     <licenses>
         <license/>
