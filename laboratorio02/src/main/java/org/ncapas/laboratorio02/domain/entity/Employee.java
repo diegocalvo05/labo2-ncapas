@@ -34,4 +34,12 @@ public class Employee {
     @ManyToOne
     @JoinColumn(name = "id_department", nullable = false, foreignKey = @ForeignKey(name = "fk_department"))
     private Department department;
+
+    @OneToOne
+    @JoinColumn(name = "id_position", nullable = false, foreignKey = @ForeignKey(name = "fk_position"))
+    private Position position;
+
+    @OneToOne
+    @JoinColumn(name = "id_contact", nullable = false, foreignKey = @ForeignKey(name = "fk_contact"))
+    private Contact contact;
 }

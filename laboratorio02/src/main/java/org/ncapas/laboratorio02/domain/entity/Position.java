@@ -4,17 +4,17 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Cache;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Stand {
+@Table(name = "position")
+public class Position {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idStand;
+    private Integer idPosition;
 
     @Column
     private String name;
