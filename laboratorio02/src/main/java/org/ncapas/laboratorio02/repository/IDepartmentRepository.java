@@ -1,11 +1,13 @@
 package org.ncapas.laboratorio02.repository;
 
+import jakarta.transaction.Transactional;
 import org.ncapas.laboratorio02.domain.entity.Department;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
+@Transactional
 public interface IDepartmentRepository extends IGenericRepository<Department, Integer> {
 
     Department findByName(String name);

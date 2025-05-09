@@ -1,5 +1,6 @@
 package org.ncapas.laboratorio02.repository;
 
+import jakarta.transaction.Transactional;
 import org.ncapas.laboratorio02.domain.entity.Employee;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -7,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import java.util.UUID;
 
+@Transactional
 public interface IEmployeeRepository extends IGenericRepository<Employee, UUID> {
 
     List<Employee> findByName(String name);
