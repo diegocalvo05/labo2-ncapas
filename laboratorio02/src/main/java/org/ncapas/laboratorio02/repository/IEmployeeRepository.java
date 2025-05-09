@@ -9,7 +9,7 @@ import java.util.UUID;
 
 public interface IEmployeeRepository extends IGenericRepository<Employee, UUID> {
 
-    List<Employee> findByFirstName(String firstName);
+    List<Employee> findByName(String name);
 
     @Query("SELECT e FROM Employee e WHERE e.department.name = :deptName")
     List<Employee> findByDepartmentName(@Param("deptName") String deptName);
